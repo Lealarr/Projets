@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes de Personnage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Créer ton personnage</h1>
+    <div class="container">
+        <div class="card">
+            <img src="/img/guerrier.png" alt="Guerrier">
+            <h2>GUERRIER</h2>
+            <form>
+                <input type="checkbox" name="class" value="guerrier">
+                <input type="text" placeholder="Veuillez choisir un nom :">
+                <select>
+                    <optgroup label="Arme">
+                        <option value="Epée">Epée</option>
+                        <option value="Hache" selected>Hache</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+        <div class="card">
+            <img src="/img/mage.png" alt="Mage">
+            <h2>MAGE</h2>
+            <form>
+                <input type="checkbox" name="class" value="mage">
+                <input type="text" placeholder="Veuillez choisir un nom :">
+                <select>
+                    <optgroup label="Arme">
+                        <option value="Boule de crystal">Boule de crystal</option>
+                        <option value="Grimoire" selected>Grimoire</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+        <div class="card">
+            <img src="/img/voleur.png" alt="Voleur">
+            <h2>VOLEUR</h2>
+            <form>
+                <input type="checkbox" name="class" value="voleur">
+                <input type="text" placeholder="Veuillez choisir un nom :">
+                <select>
+                    <optgroup label="Arme">
+                        <option value="Arc">Arc</option>
+                        <option value="Dague" selected>Dague</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+        <div class="card">
+            <img src="/img/clerc.png" alt="Clerc">
+            <h2>CLERC</h2>
+            <form>
+                <input type="checkbox" name="class" value="clerc">
+                <input type="text" placeholder="Veuillez choisir un nom :">
+                <select>
+                    <optgroup label="Arme">
+                        <option value="Sceptre">Sceptre</option>
+                        <option value="Croix" selected>Croix</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+    </div>
+    <button id="submitBtn" class="submit">SOUMETTRE</button>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+</body>
+</html>
