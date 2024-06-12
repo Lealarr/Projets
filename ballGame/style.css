@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
@@ -60,3 +61,67 @@ section{
     75%{top:400px;left: 0px;}
     100%{top:0px;left: 0px;}
 }
+=======
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 5.4rem;
+    font-family: arial;
+    color:white;
+    background-color: grey;
+    user-select: none;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ball{
+    height: 50px;
+    width:50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    animation-name:ball;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+#blue-ball{
+    background-color: blue;
+    grid-column: 2;
+}
+
+#red-ball{
+    background-color: red;
+    animation-duration:3s;
+    grid-column: 2;
+}
+.ball:active{
+    transform: scale(0.75);
+    transition: 0.1s;
+}
+@keyframes ball{
+    0%{top:0px;left: 0px;}
+    25%{top:0px;left: 400px;}
+    50%{top:400px;left: 400px;}
+    75%{top:400px;left: 0px;}
+    100%{top:0px;left: 0px;}
+}
+>>>>>>> 4fa2e52f0d68df7722984ddeb2f8ec9d1d13eba4
